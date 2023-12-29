@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Little Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Li's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+      <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 font-italic">Portfolio of a starting Python Developer!</h1>
+          <p class="lead my-3">Student of the course '100 Days Of Code with Angela YU</p>
+          <p class="lead mb-0"><a href="https://www.udemy.com/course/100-days-of-code/" class="text-white font-weig0ht-bold">About the course...</a></p>
+        </div>
+      </div>
+ 
+<!-- Flashcards -->
+
+<div class="card" style="width: 18rem; height: 30rem">
+    <img class="card-img-top" src="{{url_for('static', filename='blogscreenshot.png')}}" alt="Card image cap">
+    <img class="card-img-top" src="{{url_for('static', filename='register.png')}}" alt="Card image cap">
+    <div class="escape"></div>
+    <div class="card-body">
+      <h5 class="card-title">Lilith's Blog</h5>
+      <p class="card-text">You can see the code of full Blog social media with registration here! Thats a project where you can communicate and have fun!</p>
+      <a href="https://github.com/LilitBalabekyan/LBlog.git" class="btn btn-primary">See the code!</a>
+    </div>
+    
+  </div>
+  <div class="card" style="width: 18rem; height: 30rem">
+    <div class="escape"></div>
+    <div class="escape"></div>
+    <img class="card-img-top" src="{{url_for('static', filename='cta_alt.png')}}" alt="Card image cap">
+    <div class="escape"></div>
+    <div class="escape"></div>
+    <div class="card-body">
+      <h5 class="card-title">Lilith's Blog</h5>
+      <p class="card-text">You can see the code of full Blog social media with registration here! Thats a project where you can communicate and have fun!</p>
+      <a href="https://github.com/LilitBalabekyan/LBlog.git" class="btn btn-primary">See the code!</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem; height: 30rem">
+    <div class="escape"></div>
+    <div class="esc"></div>
+    <div class="esc"></div>
+    <!-- <div style="height: 7px;"></div> -->
+    <img class="card-img-top" src="{{url_for('static', filename='stategame.png')}}" alt="Card image cap">
+
+    <div class="card-body">
+
+      <h5 class="card-title">US STATE GAME!</h5>
+      <p class="card-text">By playing this exiting game you can learn a lot of states and also challenge your knowlage!</p>
+      <a href="#" class="btn btn-primary">Go to the top!</a>
+
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem; height: 30rem">
+    <div class="escape"></div>
+    <div class="esc"></div>
+    <div class="esc"></div>
+    <img class="card-img-top" src="{{url_for('static', filename='selenium.jpg')}}" alt="Card image cap">
+    <div class="escape"></div>
+    <div class="card-body">
+      <h5 class="card-title">Selenium Bots!</h5>
+      <p class="card-text">I've created a lot of Selenium bots! Follow-bot, Work-Search-Apply-bot, Tinder-Swipe-bot and manny many other interesting bots!</p>
+      <a href="#" class="btn btn-primary">Go to the top</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <p class="text-muted">© 2022</p>
+      </div>
+  
+      <div class="col mb-3">
+  
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+
+
+      <div class="col mb-3">
+        <footer>
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

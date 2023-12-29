@@ -1,0 +1,16 @@
+body{
+    background-color: aliceblue;
+}
+.card{
+    float: left;
+    margin-left: 70px;
+}
+
+.escape{
+
+    height:36px;
+}
+
+.esc{
+    height:20px;
+}
